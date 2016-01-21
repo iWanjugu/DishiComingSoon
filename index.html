@@ -4,8 +4,8 @@
         <title>Dishi</title>
         <!--Stylesheets-->
         <link rel="stylesheet" href="slider/vegas.min.css">
-        <link rel="stylesheet" href="css/app.css">
         <link rel="stylesheet" href="css/foundation.min.css">
+        <link rel="stylesheet" href="css/app.css">
     </head>
 
 <!---------------------------------------------------------------------->
@@ -15,28 +15,41 @@
     <div class="content-overlayed">
 
         <div class="row top-space"></div>
-        <!-- ROW 1 -->
-        <div class="row">
-            <div class="small-4 small-centered columns title">
-                <h1 class="">DISHI</h1>
-            </div>
-        </div>
 
-         <hr/>
+        <div class="row small-container grey-overlay rounded-small">
+            <div class="overlay">
 
-        <!--ROW 2-->
-        <div class="row">
-            <div class="small-8 small-centered large-8 columns"></div>
-<!--                <div class="panel">-->
-                    <h2> Welcome! </h2>
-                    <p>The BEST community for people who are passionate about food.</p>
-                    <p> Join the community </p>
-<!--                </div>-->
-        </div>
+                <!-- title -->
+                <div class="row">
+                    <div class="small-4 small-centered columns title">
+                        <h1 class="">DISHI</h1>
+                    </div>
+                </div>
 
+                <hr/>
 
-        <!-- split the row with a horizontal rule -->
-        <hr/>
+                <br>
+                <br>
+                <!--ROW 2-->
+                <div class="row">
+                    <div class="small-8 small-centered large-8 columns">
+                        <p>Welcome! To the BEST community for people who are passionate about food.</p>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <hr/>
+
+                <!--ROW 2-->
+                <div class="row">
+                    <div id="join-button"class="small-12 columns">
+                        <a href="#" class="animated"> JOIN the Community </a>
+                    </div>
+                </div>
+
+            </div> <!-- End of overlay -->
+        </div> <!-- small-container end-->
 
     </div> <!-- End of content-overlayed -->
 
@@ -57,20 +70,21 @@
     <script src="slider/vegas.min.js"></script>
 
     <script>
-$("#example, body").vegas({
-    overlay: true,
-    transition: 'fade',
-    transitionDuration: 4000,
-    delay: 10000,
-    animation: 'random',
-    animationDuration: 20000,
-    slides: [
-        { src: "/img/vegasimgs/food3.jpg" },
-        { src: "/img/vegasimgs/cupcakes.jpg" },
-        { src: "/img/vegasimgs/hotchocolate.jpg" },
-        { src: "/img/vegasimgs/rice.jpg" }
-    ]
-});
+    $("#example, body").vegas({
+        overlay: true,
+        transition: 'fade',
+        transitionDuration: 4000,
+        delay: 10000,
+        animation: 'random',
+        animationDuration: 20000,
+        slides: [
+            { src: "/img/vegasimgs/food3.jpg" },
+            { src: "/img/vegasimgs/cupcakes.jpg" },
+            { src: "/img/vegasimgs/hotchocolate.jpg" },
+            { src: "/img/vegasimgs/rice.jpg" }
+        ],
+        overlay: '/slider/overlays/06.png'
+    });
 
     </script>
 </body>
