@@ -185,6 +185,10 @@ section#example {
 
 }
 
+#content p{
+    font-size: 1.2rem;
+
+}
 /*Join button*/
 #join-button {
     height: 70px;
