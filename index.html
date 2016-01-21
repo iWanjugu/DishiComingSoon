@@ -1,118 +1,77 @@
-<!DOCTYPE html>
-<!--[if IE 9]><html class="lt-ie10" lang="en" > <![endif]-->
-<html class="no-js" lang="en" >
+<!doctype html>
+<html>
+    <head>
+        <title>Dishi</title>
+        <!--Stylesheets-->
+        <link rel="stylesheet" href="slider/vegas.min.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/foundation.min.css">
+    </head>
 
-<head>
-      <meta charset="utf-8">
-      <!-- If you delete this meta tag World War Z will become a reality -->
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-      <title>Dishi - Coming Soon</title>
-
-    <!--Stylesheets-->
-    <link rel="stylesheet" href="foundation-5.5.3/css/normalize.css">
-    <link rel="stylesheet" href="foundation-5.5.3/css/foundation.css">
-    <link rel="stylesheet" href="foundation-6/css/foundation.css">
-    <link rel="stylesheet" href="foundation-6/css/app.css">
-    <link ref="stylesheet" type="text/css" href="css/animate.css">
-    <link ref="stylesheet" type="text/css" href="css/global.css">
-    <link ref="stylesheet" type="text/css" href="vegas/vegas.min.css">
-
-    <!--Scripts-->
-
-
-
-</head>
 <!---------------------------------------------------------------------->
 <body>
-
-<section id="whole">
-    <!-- body -->
+<section id="example">
+        <!-- body -->
     <div class="content-overlayed">
 
         <div class="row top-space"></div>
         <!-- ROW 1 -->
         <div class="row">
-            <div class="large-4 columns"></div>
-            <div class="large-4 columns title">
-                <h1>DISHI</h1>
+            <div class="small-4 small-centered columns title">
+                <h1 class="">DISHI</h1>
             </div>
-            <div class="large-4 columns"></div>
-
         </div>
 
          <hr/>
 
         <!--ROW 2-->
         <div class="row">
-
-            <div class="large-2 columns"></div>
-            <div class="large-8 columns"></div>
-                <div class="panel">
+            <div class="small-8 small-centered large-8 columns"></div>
+<!--                <div class="panel">-->
                     <h2> Welcome! </h2>
                     <p>The BEST community for people who are passionate about food.</p>
                     <p> Join the community </p>
-                </div>
+<!--                </div>-->
         </div>
 
-        <div class="large-2 columns"></div>
 
         <!-- split the row with a horizontal rule -->
         <hr/>
 
     </div> <!-- End of content-overlayed -->
 
-</section>  <!-- End of whole -->
 
-<!-------------------------------------------------------------------------->
-<!--- Scripts ----->
-    <!---Foundation--->
-    <script src="foundation-5.5.3/js/vendor/modernizr.js"></script>
-    <script src="foundation-5.5.3/js/vendor/jquery.js"></script>
-    <script src="foundation-5.5.3/js/foundation.min.js"></script>
+
+
+</section>
+
+<!---------------------------------------------------------------------->
+    <!--- Scripts ----->
+    <script src="js/foundation.min.js"></script>
     <script>
         $(document).foundation();
     </script>
 
-
     <!--Vegas-->
-    <script src="js/jquery-1.3.2.min.js"></script>
-    <script src="vegas/vegas.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="slider/vegas.min.js"></script>
 
     <script>
-        $('#whole, body').vegas({
-          overlay: true,
-          transition: 'fade',
-          transitionDuration: 4000,
-          delay: 10000,
-          animation: 'random',
-          animationDuration: 20000,
-          slides: [
-                { src:'/assets/food3.jpg' },
-                { src:'/assets/food4.jpg' },
-              ],
-        overlay: '/vegas/dist/overlays/09.png'
-            });
+$("#example, body").vegas({
+    overlay: true,
+    transition: 'fade',
+    transitionDuration: 4000,
+    delay: 10000,
+    animation: 'random',
+    animationDuration: 20000,
+    slides: [
+        { src: "/img/vegasimgs/food3.jpg" },
+        { src: "/img/vegasimgs/cupcakes.jpg" },
+        { src: "/img/vegasimgs/hotchocolate.jpg" },
+        { src: "/img/vegasimgs/rice.jpg" }
+    ]
+});
+
     </script>
-
-<!--
-        Fade in and out script
-    <script type="text/javascript">
-        $(function(){
-
-            $('.fadein img:gt(0)').hide();
-            setInterval(function(){
-            $('.fadein :first-child').fadeOut(2000)
-            .next('img').fadeIn(2000)
-            .end().appendTo('.fadein');},
-            7000);
-
-			});
-
-		</script>
--->
-
-
-
 </body>
 </html>
